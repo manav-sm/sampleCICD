@@ -5,10 +5,10 @@
     <classes>
       <class name="stepDef.RunCucumberTest">
         <methods>
-          <include name="setUpClass"/>
           <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
           <include name="sendEmailReport"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
       </class> <!-- stepDef.RunCucumberTest -->
     </classes>

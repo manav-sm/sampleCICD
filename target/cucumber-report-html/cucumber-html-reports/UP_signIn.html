@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>demoProjectForPractice</td>
                           <td>1</td>
-                        <td>21 Mar 2023, 10:55</td>
+                        <td>22 Mar 2023, 17:20</td>
           </tr>
         </tbody>
       </table>
@@ -127,12 +127,12 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
           <td >0</td>
-          <td >0</td>
-          <td     class="skipped"   >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">2</td>
-          <td class="duration" data-value="146000">000ms</td>
+          <td class="duration" data-value="3177268000">3s 177ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -197,7 +197,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.before(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">9s 466ms</span>
+  <span class="lead-duration duration">11s 977ms</span>
 
           </div>
 
@@ -228,15 +228,54 @@ $(document).ready(function() {
   <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief failed">
   <span class="keyword indention">And</span>
   <span class="name">the user creates a new profile</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">3s 177ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Error message</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (712, 744)
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc361a1f6dd9aac8222c7cbc2a22855a, clickElement {id=e9d5d113-6dd8-4558-a151-8783aad47e8f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (dc361a1f6dd9aac8222c7cbc2a22855a)] -> xpath: //a[normalize-space()='Create a new account']]
+Session ID: dc361a1f6dd9aac8222c7cbc2a22855a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at pageObject.Upgrade_page.Upgrade_Account_page.clickOnCreateAccount(Upgrade_Account_page.java:52)
+	at stepDef.Upgrade_steps.Upgrade_Account_steps.the_user_creates_a_new_profile(Upgrade_Account_steps.java:26)
+	at ✽.the user creates a new profile(file:///Users/manav/Documents/demoPractice/demoProjectForPractice/src/test/java/features/Upgrade/signIn.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -274,9 +313,9 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -286,146 +325,31 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details  in ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">25s</span>
+  <span class="lead-duration duration">5s 477ms</span>
 
           </div>
 
                       
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Error message</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db9e1b25e72a902240ab39007f100600, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61133/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db9e1b25e72a902240ab39007f100600
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
-	at stepDef.Hook.tearDown(Hook.java:131)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
-	at stepDef.Hook.tearDown(Hook.java:131)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:114)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	... 3 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:25372
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
-	... 4 more
-Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:25372
-	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:25372
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre>
-      </div>
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1326286713" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1326286713.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1326286713" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1326286713.png"></span>
     </div>
   </div>
-
-          
-          
+        </div>
 
         </div>
           </div>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="56.89" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="The Upgrade users can sign into account" name="Ensure create the profile and verify login functionality" time="56.785">
-<failure type="org.openqa.selenium.TimeoutException" message="timeout: Timed out receiving message from renderer: 20.000
+<testsuite name="Cucumber" time="38.038" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="The Upgrade users can sign into account" name="Ensure create the profile and verify login functionality" time="37.933">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element is not clickable at point (712, 744)
   (Session info: chrome=111.0.5563.64)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db9e1b25e72a902240ab39007f100600, clickElement {id=db6d9818-0d0c-41a6-abac-8e2e0cad85b1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61133/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (db9e1b25e72a902240ab39007f100600)] -&gt; xpath: //a[normalize-space()='Login automation']]
-Session ID: db9e1b25e72a902240ab39007f100600">
-<![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+Command: [dc361a1f6dd9aac8222c7cbc2a22855a, clickElement {id=e9d5d113-6dd8-4558-a151-8783aad47e8f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (dc361a1f6dd9aac8222c7cbc2a22855a)] -&gt; xpath: //a[normalize-space()='Create a new account']]
+Session ID: dc361a1f6dd9aac8222c7cbc2a22855a">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (712, 744)
   (Session info: chrome=111.0.5563.64)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db9e1b25e72a902240ab39007f100600, clickElement {id=db6d9818-0d0c-41a6-abac-8e2e0cad85b1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61133/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (db9e1b25e72a902240ab39007f100600)] -> xpath: //a[normalize-space()='Login automation']]
-Session ID: db9e1b25e72a902240ab39007f100600
+Command: [dc361a1f6dd9aac8222c7cbc2a22855a, clickElement {id=e9d5d113-6dd8-4558-a151-8783aad47e8f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (dc361a1f6dd9aac8222c7cbc2a22855a)] -> xpath: //a[normalize-space()='Create a new account']]
+Session ID: dc361a1f6dd9aac8222c7cbc2a22855a
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -35,14 +35,14 @@ Session ID: db9e1b25e72a902240ab39007f100600
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at pageObject.Upgrade_page.Upgrade_Account_page.loginToLoginWebsite(Upgrade_Account_page.java:45)
-	at stepDef.Upgrade_steps.Upgrade_Account_steps.the_user_navigates_to_the_homepage(Upgrade_Account_steps.java:22)
-	at ✽.the user navigates to the homepage(file:///Users/manav/Documents/demoPractice/demoProjectForPractice/src/test/java/features/Upgrade/signIn.feature:4)
+	at pageObject.Upgrade_page.Upgrade_Account_page.clickOnCreateAccount(Upgrade_Account_page.java:52)
+	at stepDef.Upgrade_steps.Upgrade_Account_steps.the_user_creates_a_new_profile(Upgrade_Account_steps.java:26)
+	at ✽.the user creates a new profile(file:///Users/manav/Documents/demoPractice/demoProjectForPractice/src/test/java/features/Upgrade/signIn.feature:8)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given the user navigates to the homepage....................................failed
-And the user creates a new profile..........................................skipped
+Given the user navigates to the homepage....................................passed
+And the user creates a new profile..........................................failed
 And the user enter valid username and password..............................skipped
 ]]></system-out>
 </testcase>

@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,9 +20,9 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -129,16 +128,16 @@
                   <a name="runScenario(&quot;Ensure create the profile and verify login functionality&quot;, &quot;The Upgrade users can sign into account...)">
                   </a> <!-- runScenario("Ensure create the profile and verify login functionality", "The Upgrade users can sign into account...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Ensure create the profile and verify login functionality","The Upgrade users can sign into account")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+                  <span class="parameters">("Ensure create the profile and verify login functionality", "The Upgrade users can sign into account")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (712, 744)
   (Session info: chrome=111.0.5563.64)
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db9e1b25e72a902240ab39007f100600, clickElement {id=db6d9818-0d0c-41a6-abac-8e2e0cad85b1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61133/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (db9e1b25e72a902240ab39007f100600)] -&gt; xpath: //a[normalize-space()=&apos;Login automation&apos;]]
-Session ID: db9e1b25e72a902240ab39007f100600
+Command: [dc361a1f6dd9aac8222c7cbc2a22855a, clickElement {id=e9d5d113-6dd8-4558-a151-8783aad47e8f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/th/f4yf398x0lb...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (dc361a1f6dd9aac8222c7cbc2a22855a)] -&gt; xpath: //a[normalize-space()=&apos;Create a new account&apos;]]
+Session ID: dc361a1f6dd9aac8222c7cbc2a22855a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -150,9 +149,9 @@ Session ID: db9e1b25e72a902240ab39007f100600
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at pageObject.Upgrade_page.Upgrade_Account_page.loginToLoginWebsite(Upgrade_Account_page.java:45)
-	at stepDef.Upgrade_steps.Upgrade_Account_steps.the_user_navigates_to_the_homepage(Upgrade_Account_steps.java:22)
-	at ✽.the user navigates to the homepage(file:///Users/manav/Documents/demoPractice/demoProjectForPractice/src/test/java/features/Upgrade/signIn.feature:4)
+	at pageObject.Upgrade_page.Upgrade_Account_page.clickOnCreateAccount(Upgrade_Account_page.java:52)
+	at stepDef.Upgrade_steps.Upgrade_Account_steps.the_user_creates_a_new_profile(Upgrade_Account_steps.java:26)
+	at ✽.the user creates a new profile(file:///Users/manav/Documents/demoPractice/demoProjectForPractice/src/test/java/features/Upgrade/signIn.feature:8)
 ... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -225,12 +224,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'stepDef.RunCucumberTest')
-data.setCell(0, 3, 56831);
+data.setCell(0, 3, 37985);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -258,27 +257,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">stepDef.RunCucumberTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4ee37ca3)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@78365cfa)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Ensure create the profile and verify login functionality", "The Upgrade users can sign into account...)</span>
-                <span class="method-start">252 ms</span>
+                <span class="method-start">273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">57104 ms</span>
+                <span class="method-start">38268 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">sendEmailReport</span>
-                <span class="method-start">57357 ms</span>
+                <span class="method-start">38481 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
