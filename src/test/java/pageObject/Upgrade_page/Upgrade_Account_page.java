@@ -51,7 +51,7 @@ public class Upgrade_Account_page extends GenericFunctions {
         scrollDown(createAccount);
         waitForElementToBeClickable(createAccount);
         hardWait(2000);
-        createAccount.click();
+        jsClick(createAccount);
         hardWait(2000);
     }
 
