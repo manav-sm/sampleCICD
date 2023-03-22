@@ -47,12 +47,12 @@ public class Upgrade_Account_page extends GenericFunctions {
 
     public void clickOnCreateAccount(){
         waitForPageToLoadCompletely();
-        hardWait(2000);
+        hardWait(4000);
         scrollDown(createAccount);
         waitForElementToBeClickable(createAccount);
-        hardWait(1000);
+        hardWait(2000);
         createAccount.click();
-        hardWait(1000);
+        hardWait(2000);
     }
 
     public void createAccount(){
