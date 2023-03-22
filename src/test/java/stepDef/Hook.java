@@ -89,35 +89,35 @@ public class Hook {
         logger.info("Browser details loaded");
     }
     public void databaseConnection() {
-        String[] DbEnv = baseURL.split("_");
-        switch (DbEnv[0]) {
-            case "stage":
-                GlobalTestData.DB_DRIVER = "org.postgresql.Driver";
-                GlobalTestData.DB_USER = "admin";
-                GlobalTestData.DB_PWD = "admin";
-                GlobalTestData.DB_URL = "jdbc:postgresql://carsaver-beta-cluster.cluster-ctqmxtymvucy.us-east-1.rds.amazonaws.com:5432/carsaver_staging";
-                GlobalTestData.DB_URL_TUNNEL = "carsaver-beta-cluster.cluster-ctqmxtymvucy.us-east-1.rds.amazonaws.com";
-                GlobalTestData.DB_PORT = 5432;
-                break;
-            case "stageCI":
-                GlobalTestData.DB_DRIVER = "org.postgresql.Driver";
-                //GlobalTestData.DB_USER = "qa_automation";
-                //GlobalTestData.DB_PWD = "5bSD_j5Gki";
-                GlobalTestData.DB_USER = "admin";
-                GlobalTestData.DB_PWD = "admin";
-                GlobalTestData.DB_URL = "jdbc:postgresql://localhost:56715/carsaver_staging";
-                GlobalTestData.DB_URL_TUNNEL = "";
-                GlobalTestData.DB_PORT = 56715;
-                break;
-            case "qa":
-                GlobalTestData.DB_DRIVER = "";
-                GlobalTestData.DB_USER = "";
-                GlobalTestData.DB_PWD = "";
-                GlobalTestData.DB_URL = "";
-                GlobalTestData.DB_URL_TUNNEL = "";
-                GlobalTestData.DB_PORT = 0;
-                break;
-        }
+//        String[] DbEnv = baseURL.split("_");
+//        switch (DbEnv[0]) {
+//            case "stage":
+//                GlobalTestData.DB_DRIVER = "org.postgresql.Driver";
+//                GlobalTestData.DB_USER = "admin";
+//                GlobalTestData.DB_PWD = "admin";
+//                GlobalTestData.DB_URL = "jdbc:postgresql://carsaver-beta-cluster.cluster-ctqmxtymvucy.us-east-1.rds.amazonaws.com:5432/carsaver_staging";
+//                GlobalTestData.DB_URL_TUNNEL = "carsaver-beta-cluster.cluster-ctqmxtymvucy.us-east-1.rds.amazonaws.com";
+//                GlobalTestData.DB_PORT = 5432;
+//                break;
+//            case "stageCI":
+//                GlobalTestData.DB_DRIVER = "org.postgresql.Driver";
+//                //GlobalTestData.DB_USER = "qa_automation";
+//                //GlobalTestData.DB_PWD = "5bSD_j5Gki";
+//                GlobalTestData.DB_USER = "admin";
+//                GlobalTestData.DB_PWD = "admin";
+//                GlobalTestData.DB_URL = "jdbc:postgresql://localhost:56715/carsaver_staging";
+//                GlobalTestData.DB_URL_TUNNEL = "";
+//                GlobalTestData.DB_PORT = 56715;
+//                break;
+//            case "qa":
+//                GlobalTestData.DB_DRIVER = "";
+//                GlobalTestData.DB_USER = "";
+//                GlobalTestData.DB_PWD = "";
+//                GlobalTestData.DB_URL = "";
+//                GlobalTestData.DB_URL_TUNNEL = "";
+//                GlobalTestData.DB_PORT = 0;
+//                break;
+
     }
     @After
     public void tearDown(Scenario scenario) {
